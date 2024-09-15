@@ -1,4 +1,5 @@
 # numnam
+[![Go Report Card](https://goreportcard.com/badge/github.com/speedyhoon/numnam)](https://goreportcard.com/report/github.com/speedyhoon/numnam)
 
 A package to convert integers into words.
 
