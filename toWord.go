@@ -2,16 +2,21 @@ package numnam
 
 import "math"
 
-// Exported variables so other languages that use arabic numbering system can be translated (like French).
+// Exported these variables so other languages can be translated, or changed to Long Scale and other integer naming systems.
 var (
-	Minus   = "Minus"
-	Zero    = "Zero"
-	To19    = []string{"", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen"}
+	Minus = "Minus"
+	Zero  = "Zero" // Zero is hardcoded to reduce processing.
+	To19  = []string{
+		"", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten",
+		"Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen",
+	}
 	Tens    = []string{"Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"}
 	Hundred = "Hundred"
 	Large   = []string{"Thousand", "Million", "Billion", "Trillion", "Quadrillion", "Quintillion"}
 )
 
+// ToWordU converts a uint into a snake-cased string.
+// For example, `1234` returns `OneThousandTwoHundredThirtyFour`.
 func ToWordU(num uint) string {
 	if num == 0 {
 		return Zero
@@ -19,6 +24,8 @@ func ToWordU(num uint) string {
 	return toWord(num)
 }
 
+// ToWord converts an int into a snake-cased string.
+// For example, `-1234` returns `MinusOneThousandTwoHundredThirtyFour`.
 func ToWord(num int) string {
 	switch {
 	case num == 0:

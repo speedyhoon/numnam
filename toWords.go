@@ -5,12 +5,17 @@ import (
 	"strings"
 )
 
+// ToWordsU converts a uint into a string of space separated words.
+// For example, `865` returns `eight hundred sixty-five`.
 func ToWordsU(num uint) string {
 	if num == 0 {
 		return strings.ToLower(Zero)
 	}
 	return strings.ToLower(strings.Join(toWords(num), " "))
 }
+
+// ToWords converts an int into a string of space separated words.
+// For example, `-865` returns `minus eight hundred sixty-five`.
 func ToWords(num int) string {
 	switch {
 	case num == 0:
