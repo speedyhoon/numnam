@@ -7,7 +7,7 @@ import (
 	"testing"
 )
 
-var positiveInts2 = map[int]string{
+var uints = map[int]string{
 	1:  "one",
 	2:  "two",
 	3:  "three",
@@ -111,15 +111,15 @@ func TestToWordsU(t *testing.T) {
 		math.MaxUint64:       "eighteen quintillion four hundred forty-six quadrillion seven hundred forty-four trillion seventy-three billion seven hundred nine million five hundred fifty-one thousand six hundred fifteen", // 18,446,744,073,709,551,615
 	}
 	for num, expected := range tests {
-		t.Run(fmt.Sprintf("uint=%d", num), func(t *testing.T) {
+		t.Run(fmt.Sprintf("tests[%d]", num), func(t *testing.T) {
 			if got := numnam.ToWordsU(num); got != expected {
 				t.Errorf("ToWordsU():\n%v, want:\n %v", got, expected)
 			}
 		})
 	}
 
-	for num, expected := range positiveInts2 {
-		t.Run(fmt.Sprintf("positiveInt=%d", num), func(t *testing.T) {
+	for num, expected := range uints {
+		t.Run(fmt.Sprintf("uints[%d]", num), func(t *testing.T) {
 			if got := numnam.ToWordsU(uint(num)); got != expected {
 				t.Errorf("ToWordU():\n%v, want:\n %v", got, expected)
 			}
@@ -128,14 +128,14 @@ func TestToWordsU(t *testing.T) {
 }
 
 func TestToWords(t *testing.T) {
-	for num, expected := range positiveInts2 {
-		t.Run(fmt.Sprintf("positiveInts=%d", num), func(t *testing.T) {
+	for num, expected := range uints {
+		t.Run(fmt.Sprintf("uints[%d]", num), func(t *testing.T) {
 			if got := numnam.ToWords(num); got != expected {
 				t.Errorf("ToWordsU():\n%v, want:\n %v", got, expected)
 			}
 		})
 
-		t.Run(fmt.Sprintf("negativeInts=%d", num), func(t *testing.T) {
+		t.Run(fmt.Sprintf("negativeInts[%d]", num), func(t *testing.T) {
 			expected = "minus " + expected
 			if got := numnam.ToWords(-num); got != expected {
 				t.Errorf("ToWordsU():\n%v, want:\n %v", got, expected)
@@ -151,7 +151,7 @@ func TestToWords(t *testing.T) {
 		math.MinInt64: "minus nine quintillion two hundred twenty-three quadrillion three hundred seventy-two trillion thirty-six billion eight hundred fifty-four million seven hundred seventy-five thousand eight hundred eight",
 	}
 	for num, expected := range others {
-		t.Run(fmt.Sprintf("others=%d", num), func(t *testing.T) {
+		t.Run(fmt.Sprintf("others[%d]", num), func(t *testing.T) {
 			if got := numnam.ToWords(num); got != expected {
 				t.Errorf("ToWordsU():\n%v, want:\n %v", got, expected)
 			}
