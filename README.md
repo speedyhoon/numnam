@@ -1,5 +1,6 @@
 # numnam
 [![Go Report Card](https://goreportcard.com/badge/github.com/speedyhoon/numnam)](https://goreportcard.com/report/github.com/speedyhoon/numnam)
+[![Om Nom in their superhero outfit sitting on a race car during cartoon episode Mechanic Rodeo at 3:13](/omnom.webp "Om Nom")](https://youtu.be/HrNzPNcoGiQ?t=188)
 
 A package to convert integers into words.
 
@@ -30,6 +31,4 @@ eighteen quintillion four hundred forty-six quadrillion seven hundred forty-four
 ```
 
 ## Name
-`numnam` is something you'd expect [Om Nom](https://cuttherope.fandom.com/wiki/Om_Nom) to say while eating any delicious candy, pizza or junk food.
-
-[![Om Nom in their superhero outfit sitting on a race car during cartoon episode Mechanic Rodeo at 3:13](/omnom.webp "Om Nom")](https://youtu.be/HrNzPNcoGiQ?t=188)
+`numnam` short for number name, is something you'd expect [Om Nom](https://cuttherope.fandom.com/wiki/Om_Nom) to say while eating any delicious candy, pizza or junk food.
