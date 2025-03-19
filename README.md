@@ -1,8 +1,9 @@
 # numnam
-[![Go Report Card](https://goreportcard.com/badge/github.com/speedyhoon/numnam)](https://goreportcard.com/report/github.com/speedyhoon/numnam)
 [![Om Nom in their superhero outfit sitting on a race car during cartoon episode Mechanic Rodeo at 3:13](/omnom.webp "Om Nom")](https://youtu.be/HrNzPNcoGiQ?t=188)
 
 A package to convert integers into words.
+
+[![Go Report Card](https://goreportcard.com/badge/github.com/speedyhoon/numnam)](https://goreportcard.com/report/github.com/speedyhoon/numnam)
 
 ## Example
 ```go
