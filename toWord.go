@@ -1,3 +1,4 @@
+// Package numnam converts integers into words.
 package numnam
 
 import "math"
