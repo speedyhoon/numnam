@@ -6,8 +6,6 @@ A Go package to convert integers into words.
 [![Go Reference](https://pkg.go.dev/badge/github.com/speedyhoon/numnam.svg)](https://pkg.go.dev/github.com/speedyhoon/numnam)
 [![Go Report Card](https://goreportcard.com/badge/github.com/speedyhoon/numnam)](https://goreportcard.com/report/github.com/speedyhoon/numnam)
 
-[![Go Report Card](https://goreportcard.com/badge/github.com/speedyhoon/numnam)](https://goreportcard.com/report/github.com/speedyhoon/numnam)
-
 ## Example
 ```go
 package main
@@ -35,4 +33,4 @@ eighteen quintillion four hundred forty-six quadrillion seven hundred forty-four
 ```
 
 ## Name
-`numnam` short for number name, is something you'd expect [Om Nom](https://cuttherope.fandom.com/wiki/Om_Nom) to say while eating any delicious candy, pizza or junk food.
+`numnam` short for "number name", is something you'd expect [Om Nom](https://cuttherope.fandom.com/wiki/Om_Nom) to say while eating any delicious 🍬, 🍭, 🍫, 🍕 or junk food.
