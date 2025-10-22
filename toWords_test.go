@@ -121,7 +121,7 @@ func TestToWordsU(t *testing.T) {
 	for num, expected := range uints {
 		t.Run(fmt.Sprintf("uints[%d]", num), func(t *testing.T) {
 			if got := numnam.ToWordsU(uint(num)); got != expected {
-				t.Errorf("ToWordU():\n%v, want:\n %v", got, expected)
+				t.Errorf("ToWordsU():\n%v, want:\n %v", got, expected)
 			}
 		})
 	}
@@ -131,14 +131,14 @@ func TestToWords(t *testing.T) {
 	for num, expected := range uints {
 		t.Run(fmt.Sprintf("uints[%d]", num), func(t *testing.T) {
 			if got := numnam.ToWords(num); got != expected {
-				t.Errorf("ToWordsU():\n%v, want:\n %v", got, expected)
+				t.Errorf("ToWords():\n%v, want:\n %v", got, expected)
 			}
 		})
 
 		t.Run(fmt.Sprintf("negativeInts[%d]", num), func(t *testing.T) {
 			expected = "minus " + expected
 			if got := numnam.ToWords(-num); got != expected {
-				t.Errorf("ToWordsU():\n%v, want:\n %v", got, expected)
+				t.Errorf("ToWords():\n%v, want:\n %v", got, expected)
 			}
 		})
 	}
@@ -153,7 +153,7 @@ func TestToWords(t *testing.T) {
 	for num, expected := range others {
 		t.Run(fmt.Sprintf("others[%d]", num), func(t *testing.T) {
 			if got := numnam.ToWords(num); got != expected {
-				t.Errorf("ToWordsU():\n%v, want:\n %v", got, expected)
+				t.Errorf("ToWords():\n%v, want:\n %v", got, expected)
 			}
 		})
 	}
