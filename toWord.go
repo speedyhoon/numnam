@@ -39,10 +39,10 @@ func ToWord(num int) string {
 	return toWord(uint(num))
 }
 
-func toWord(num uint) string {
+func toWord(num uint) (w string) {
 	switch {
 	case num == 0:
-		return ""
+		return
 	case num < 20:
 		return To19[num]
 	case num < 100:
@@ -54,10 +54,11 @@ func toWord(num uint) string {
 		po := pow1000(i + 2)
 		if num < po || po == num && num == math.MaxUint {
 			po = pow1000(i + 1)
-			return toWord(num/po) + word + toWord(num%po)
+			w = toWord(num/po) + word + toWord(num%po)
+			break
 		}
 	}
-	return "" // Unhandled number.
+	return
 }
 
 func pow1000(p int) uint {

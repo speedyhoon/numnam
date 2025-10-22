@@ -28,7 +28,7 @@ func ToWords(num int) string {
 	return strings.ToLower(strings.Join(toWords(uint(num)), " "))
 }
 
-func toWords(num uint) []string {
+func toWords(num uint) (w []string) {
 	switch {
 	case num == 0:
 		return nil
@@ -47,8 +47,9 @@ func toWords(num uint) []string {
 		po := pow1000(i + 2)
 		if num < po || po == num && num == math.MaxUint {
 			po = pow1000(i + 1)
-			return append(append(toWords(num/po), word), toWords(num%po)...)
+			w = append(append(toWords(num/po), word), toWords(num%po)...)
+			break
 		}
 	}
-	return nil // Unhandled number.
+	return
 }
