@@ -2,9 +2,10 @@ package numnam_test
 
 import (
 	"fmt"
-	"github.com/speedyhoon/numnam"
 	"math"
 	"testing"
+
+	"github.com/speedyhoon/numnam"
 )
 
 var uints = map[int]string{

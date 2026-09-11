@@ -2,6 +2,7 @@ package numnam_test
 
 import (
 	"fmt"
+
 	"github.com/speedyhoon/numnam"
 )
 

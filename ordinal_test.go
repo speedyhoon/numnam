@@ -2,10 +2,11 @@ package numnam_test
 
 import (
 	"fmt"
-	"github.com/speedyhoon/numnam"
 	"math"
 	"strings"
 	"testing"
+
+	"github.com/speedyhoon/numnam"
 )
 
 func TestOrdinal(t *testing.T) {
