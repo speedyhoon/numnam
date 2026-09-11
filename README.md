@@ -1,18 +1,20 @@
 # numnam
 [![Om Nom in their superhero outfit sitting on a race car during cartoon episode Mechanic Rodeo at 3:13](/omnom.webp "Om Nom")](https://youtu.be/HrNzPNcoGiQ?t=188)
 
-A Go package to convert integers into words and ordinal suffixes (`"st"`, `"nd"`, `"rd"`, `"th"`).
-
 [![Go Reference](https://pkg.go.dev/badge/github.com/speedyhoon/numnam.svg)](https://pkg.go.dev/github.com/speedyhoon/numnam)
-[![Go Report Card](https://goreportcard.com/badge/github.com/speedyhoon/numnam)](https://goreportcard.com/report/github.com/speedyhoon/numnam)
+[![Go Report Card](https://raw.githubusercontent.com/speedyhoon/speedyhoon/refs/heads/main/goReport.svg)](https://goreportcard.com/report/github.com/speedyhoon/numnam)
+![license AGPL3](https://raw.githubusercontent.com/speedyhoon/speedyhoon/refs/heads/main/AGPL3.svg)
+
+A Go package to convert integers into words and ordinal suffixes (`"st"`, `"nd"`, `"rd"`, `"th"`).
 
 ## Example
 ```go
 package main
 
 import (
-	"github.com/speedyhoon/numnam"
 	"math"
+
+	"github.com/speedyhoon/numnam"
 )
 
 func main() {
